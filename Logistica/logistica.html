@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sitio Web - Separación Responsable de Residuos Sólidos</title>
+  <!-- Se agregan estilos con más colores, degradados y gráficos -->
+  <style>
+    /* Fuente de Google para un diseño moderno */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffeee3, #ffeee3, #ffeee3);
+      color: #000000;
+    }
+
+    /* Barra de navegación innovadora */
+    nav {
+      background: linear-gradient(90deg, #185a9d, #185a9d);
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    nav a:hover {
+      transform: scale(1.1);
+    }
+
+    /* Contenedor principal con fondo semitransparente y bordes redondeados */
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgb(255, 255, 255);
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Elementos decorativos en el contenedor */
+    .container:before, .container:after {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: url('https://via.placeholder.com/200x200.png?text=Dibujo+de+Planta') no-repeat center center;
+      background-size: contain;
+      opacity: 0.15;
+    }
+    .container:before {
+      top: -50px;
+      left: -50px;
+    }
+    .container:after {
+      bottom: -50px;
+      right: -50px;
+    }
+
+    /* Encabezado */
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #185a9d;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin: 0.5rem 0;
+    }
+    header img.main-img {
+      display: block;
+      margin: 1.5rem auto;
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.5s ease;
+    }
+    header img.main-img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Tablas y Listas con diseños innovadores */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5rem;
+      background: #ffeee3;
+    }
+    table, th, td {
+      border: 1px solid #afafaf;
+    }
+    th, td {
+      padding: 1rem;
+      text-align: center;
+    }
+    th {
+      background: #185a9d;
+      color: #fff;
+      font-weight: bold;
+    }
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+      margin-bottom: 1.5rem;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    a {
+      color: #185a9d;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #185a9d;
+      text-decoration: underline;
+    }
+
+    /* Sección de videos */
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .video-container video {
+      width: 300px;
+      border: 4px solid #185a9d;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+      nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+      }
+      .video-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: linear-gradient(90deg, #ffeee3, #ffeee3);
+      color: #fff;
+      border-top: 4px solid #ffeee3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <nav>
+    <a href="#principal">Inicio</a>
+    <a href="#pensamiento">Pensamiento Matemático II</a>
+    <a href="#lengua">Lengua y Comunicación II</a>
+    <a href="#ingles">Inglés II</a>
+    <a href="#sociales">Ciencias Sociales II</a>
+    <a href="#energia">Conservación de la energía</a>
+    <a href="#logistica">Logística</a>
+  </nav>
+
+  <!-- Contenedor Principal -->
+  <div class="container">
+    <!-- Página Principal -->
+    <header id="principal">
+      <h1>Separación Responsable de Residuos Sólidos</h1>
+      <p><strong>Tema:</strong> Desarrollo de hábitos conscientes de consumo en CBTis 118 y la comunidad.</p>
+      <p><strong>Objetivo General:</strong> Promover la separación responsable de residuos sólidos y fomentar prácticas sostenibles.</p>
+      <p><strong>Objetivos Específicos:</strong></p>
+      <ul>
+        <li>Fomentar la educación ambiental en la comunidad.</li>
+        <li>Implementar sistemas de separación y reciclaje en la institución.</li>
+        <li>Concienciar sobre los beneficios del consumo responsable.</li>
+      </ul>
+      <p><strong>Número de Equipo:</strong> Equipo numero 2 </p>
+      <p><strong>Integrantes del Equipo:</strong> 
+        <p>Ivanna Camila Perez Vega </p>
+				<p>Cristina Osuna Avalos</p>
+				<p>Angel Gabriel Ojeda Perez</p>
+				<p>Cristian Garcia Perez</p>
+				<p>Emiliano Huerta Sanchez </p>
+      <!--https://drive.google.com/file/d/1mMf12-X01x9gFgVjOF2EbwC_mJZHLdci/view?usp=drivesdk/-->
+      <img src="img/HongoV.jpeg" alt="Dibujo de plantas" width="1px" height="599px" class="main-img">
+            <p><a href="https://www.significados.com/reciclaje/" target="_blank">https://www.significados.com/reciclaje/
+</a></p>
+
+    </header>
+
+    <!-- Secciónnnovadores -->
+    <section id="informacion">
+      <h2>Información Adicional</h2>
+      <p>Organización del manejo de residuos a través de tablas e información visual:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo de Residuo</th>
+            <th>Como son ?</th>
+          </tr>
+        </thead
+        <tbody>
+          <tr>
+            <td>Orgánicos</td>
+            <td>Desechos de origen biológico, tanto vegetal como animal, que pueden descomponerse> en la tierra.</td>
+          </tr>
+          <tr>
+            <td>Reciclables</td>
+            <td>Son aquellos materiales que, después de ser utilizados, pueden ser transformados y reutilizados para crear nuevos productos</td>
+          </tr>
+          <tr>
+            <td>Peligrosos</td>
+          <td>Aquellos residuos que, debido a sus peligros intrínsecos, por ejemplo, ser corrosivos, reactivos, explosivos, tóxicos, inflamables, pueden causar daños o efectos indeseados a la salud.>
+   </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>✅ 1. Implementación de programas de separación de residuos desde el hogar y la escuela.</li>
+        <li>✅ 2. Promover el uso de materiales biodegradables y reutilizables en productos de consumo diario>
+        <li>✅ 3. Crear talleres comunitarios de reciclaje creativo>
+      </ul>
+    </section>
+
+    <!-- Secciones por asignatura -->
+    <section id="pensamiento">
+      <h2>Pensamiento Matemático II</h2>
+      <p>Recursos para el razonamiento lógico y matemático aplicado a problemas ambientales.</p>
+     <img src="img/Matematicas1.jpg" width="350px" height="400px" alt="XD"/>
+     <img src="img/Matematicas2.jpeg" width="400px" height="400px" alt="XD"/>
+      <p>Más información: <a href="https://www.ejemplo.com/pensamiento-matematico" target="_blank">Visitar recurso</a></p>
+    </section>
+
+    <section id="lengua">
+      <h2>Lengua y Comunicación II</h2>
+      <p> Reseña descriptiva y crítica. -Carteles, volantes, folletos (virtual y/o que no genere desecho).</p>
+       <img src="img/Español1.jpeg" width="px" height="300px" alt="XD"/>
+       <img src="img/Español2.jpeg" width="px" height="300px" alt="XD"/>
+      <p>Más información: <a href="https://www.ejemplo.com/lengua-comunicacion" target="_blank">Visitar recurso</a></p>
+    </section>
+
+    <section id="ingles">
+      <h2>Inglés II</h2>
+      <p>Póster digital y físico. Rotular en inglés/ español los contenedores de residuos. Subir fotos de personas que ya separan los residuos sólidos. Evidencia fotográfica a través de una rúbrica .</p>
+      <img src="img\ingles.jpeg" width="250px" height="250px" alt="XD"/>
+      <p>Más información: <a href="https://www.ejemplo.com/ingles" target="_bank">Visitar recurso</a></p>
+    </section>
+
+    <section id="sociales">
+      <h2>Ciencias Sociales II</h2>
+      <img src="img\CienciasSociales.jpeg" width="250px" height="250px" alt="XD"/>
+      <p>Análisis de los impactos sociales y culturales derivados del manejo responsable de residuos sólidos.</p>
+      <p>Más información: <a href="https://www.ejemplo.com/ciencias-sociales" target="_blank">Visitar recurso</a></p>
+    </section>
+
+    <section id="energia">
+      <h2>Conservación de la Energía y su Interacción con la Materia</h2>
+      <p>Estudio de estrategias de ahorro energético vinculadas al manejo de residuos.</p>
+      <p>Más información: <a href="https://www.ejemplo.com/energia" target="_blank">Visitar recurso</a></p>
+    </section>
+
+    <section id="logistica">
+      <h2>Logística</h2>
+      <p>Optimización del flujo de residuos mediante una planificación estructurada.</p>
+      <p>Más información: <a href="https://www.ejemplo.com/logistica" target="_blank">Visitar recurso</a></p>
+    </section>
+
+    <!-- Publicación en Redes Sociales -->
+    <section id="redes-sociales">
+      <h2>Difunde Nuestro Proyecto</h2>
+      <p>Comparte nuestro sitio en redes sociales: <a href="https://www.instagram.com/reciclick.2025?igsh=MWpveTR3NmE3ZXVkZA%3D%3D&utm_source=qr" target="_blank">https://www.ejemplo-de-redsocial.com/mi-sitio</a></p>
+    </section>
+
+    <!-- Entrevistas -->
+    <section id="entrevistas">
+      <h2>Entrevistas sobre el Sitio Web</h2>
+      <p>Mira lo que opinan un amigo, un familiar y un docente sobre el proyecto:</p>
+      <div class="video-container">
+        <video controls>
+          <source src="img/Video1.mp4" type="video/mp4">
+          Tu navegador no soporta video.
+        </video>
+        <video controls>
+          <source src="img/Video2.mp4" type="video/mp4">
+          Tu navegador no soporta video.
+        </video>
+        <video controls>
+          <source src="img/Video4.mp4" type="video/mp4">
+          Tu navegador no soporta video.
+        </video>
+      </div>
+    </section>
+  </div>
+
+  <!-- Pie de Página -->
+  <footer>
+    <p>© 2025 CBTis 118 - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
